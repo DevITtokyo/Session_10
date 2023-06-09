@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        // Sử dụng câu lệnh if, xây dưjng bài toán tính vé xe bus
+        // tuổi <6 : miễn phí vé xe
+        // 6-18 : giá vé 5000
+        //  18-60 : giá vé 10000
+        //  >=60 : miễn phí vé xe
+
+        let age = +prompt ("Nhập vào số tuổi của bạn");
+        if (age < 6 || age >= 60) {
+            console.log('Miễn phí vé xe bus');
+        } else if (age < 18) {
+            console.log('Giá vé xe bus là 5000');
+        } else{
+            console.log('Giá vé xe bus là 10000');
+        }  
+    </script>
+
+</body>
+</html>

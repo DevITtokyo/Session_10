@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        // NHập vào 2 số từ bàn phím và các phép tính (+-*/)
+        // in ra kết quả các phép tính
+        // number1= 10. number2 = 5, phép tính "/" -> result: 2
+        let number1 = +prompt ("Nhập vào số thứ nhất");
+        let number2 = +prompt ("Nhập vào số thứ hai");
+        let phepTinh = prompt ("Nhập vào phép tính");
+        let result;
+        switch (phepTinh) {
+            case "+":
+                result = number1 + number2;
+            break;
+            case "-":
+                result = number1 - number2;
+            break;
+            case "*":
+                result = number1 * number2;
+            break;
+            case "/":
+                result = number1 / number2;
+            break;
+            default:
+        }   
+        console.log('Kết quả của phép tính là :', result);
+    </script>
+</body>
+</html>

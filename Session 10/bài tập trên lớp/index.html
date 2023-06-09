@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- In ra tất cả các số lẻ và chia hết cho 3 trong khoảng từ 1-100 -->
+    <!-- <script>
+        for (let i=1 ; i<100; i++) {
+            if (i%2!==0 && i%3==0) {
+                console.log("Những số lẻ chia hết cho 3 từ 0-100 là :" +i);
+            }
+        }
+    </script> -->
+
+    <!-- Chỉ sử dụng vòng lặp for. k sử dụng if, in ra các số chia hết cho 3-100 -->
+    <!-- <script>
+        for (let i=3 ; i<100 ; i+=3) {
+            console.log("Những số lẻ chia hết cho 3 từ 3-100 là: " +i);
+        }
+    </script> -->
+
+    <!-- in ra các số chẵn từ 1-100, sắp xếp theo giá trị giảm dần -->
+
+    <!-- <script>
+        console.log('Các số chẵn từ 100-1 là :');
+        for (i=100 ; i > 1 ; i-=2) {
+            console.log(i);
+        }
+    </script> -->
+
+    <!-- Nhập vào 1 số in ra các số từ 1 đến nó -->
+    <!-- <script>
+        let number = +prompt ("Nhập vào 1 số");
+        let a = 1;
+        while (a<=number) {
+            console.log();
+            a++;
+        }
+    </script> -->
+
+    <!-- Nhập vào 1 số có giá trị từ 0-10 (Gợi ý tạo ra 1 vòng lặp vô hạn đến khi nào nhập đúng yêu cầu thì thôi! 
+        sử dụng break để thoát khỏi vòng lặp
+        khi nhập giá trị k phải số thì chuyển sang số NaN
+        isNaN(number) : ktra số đó có phải là số hay k? -->
+
+        <!-- <script>
+            while (true) {
+                let numberInput = Number(prompt('Nhập vào 1 số'));
+                if (isNaN (numberInput)) {
+                    if (numberInput >=0 && numberInput <=10){
+                        break;
+                    } else {
+                        alert('Số vừa nhập có giá trị ngoài 1-100');
+                    }
+                } else {
+                    console.log("Đây không phải là 1 số");
+                }
+            }
+        </script> -->
+
+        <!-- Nhập vào tuổi sinh viên, yêu cầu tuổi phải là 1 số có giá trị >=18 -->
+
+        <!-- <script>
+            let age;
+            while (true) {
+                age = Number(prompt('Nhập vào số tuổi sinh viên'));
+                if (isNaN (age)) {
+                    alert ('Đây không phải là 1 số')
+                } else { 
+                    if ( age >=18 ) {
+                        break;
+                    } else {
+                    alert ('Tuổi sinh viên phải lớn hơn hoặc bằng 18, vui lòng nhập lại');
+                    } 
+                }
+            }
+            document.write('Tuổi bạn đã nhập là :' +age);
+        </script> -->
+
+        <!-- Vòng lặp do..while -->
+        <!-- ví dụ: Nhập vào 1 số >=3 in ra các số từ 3-10 -->
+        <script>
+            // let a = 3;
+            // do {
+            //     console.log(a);
+            //     a++;
+            // } while (a<=10);
+
+
+            // ví dụ : Nhập và in ra mã sinh viên và thoả mãn mã sinh viên gồm 5 kí tự và bắt đầu bằng chữ s
+            // gợi ý : String.length : trả ra số ký tự (độ dài) của chuỗi
+                    // str.starWith ("S") : true -> chuỗi bắt đầu là s,
+                    // false -> Chuỗi không bắt đầu là s
+            do {
+                let studenId = prompt ("Nhập vào mã sinh viên bắt đầu bằng chữ s");
+                if (studenId.length=5 && studenId.startWith ("S")) {
+                    alert ("Mã sinh viên thoả mãn");
+                    break;
+                } else {
+                    alert ("Mã sinh viên không thoả mãn")
+                }
+            } while (true) 
+                alert ("Mã sinh viên là " +studentId);
+        </script>
+</body>
+</html>
